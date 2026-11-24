@@ -1,0 +1,18 @@
+[Unit]
+Description=CucCut AI proxy (Groq Whisper subtitles)
+After=network.target
+
+[Service]
+User=sm
+Group=sm
+EnvironmentFile=/etc/cuccut/cuccut.env
+Environment=DATA_DIR=/var/lib/cuccut
+ExecStart=/home/sm/sdk/node/bin/node /root/session_manager_workspaces/cuccut/server/index.mjs
+WorkingDirectory=/var/lib/cuccut
+Restart=always
+RestartSec=2
+NoNewPrivileges=true
+MemoryMax=256M
+
+[Install]
+WantedBy=multi-user.target

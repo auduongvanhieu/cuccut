@@ -1,0 +1,167 @@
+.home {
+  flex: 1;
+  overflow-y: auto;
+  padding: calc(8px + var(--safe-top)) 16px calc(24px + var(--safe-bottom));
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+.home-head {
+  height: 52px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.home-actions {
+  display: grid;
+  gap: 12px;
+  margin: 8px 0 24px;
+}
+.new-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #19d3c5 0%, #1a8cff 100%);
+  color: #00201d;
+  text-align: left;
+}
+.new-btn b {
+  display: block;
+  font-size: 18px;
+}
+.new-btn small {
+  opacity: 0.8;
+  font-size: 13px;
+}
+.new-ic {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #fff6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.quick {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.quick button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 8px;
+  border-radius: 14px;
+  background: var(--bg-2);
+  font-size: 14px;
+}
+.proj-section h2 {
+  font-size: 16px;
+  margin: 0 0 12px;
+}
+.empty,
+.usage {
+  color: var(--text-3);
+  font-size: 13px;
+}
+.usage {
+  margin-top: 20px;
+}
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+.proj {
+  cursor: pointer;
+}
+.proj-thumb {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  background: var(--bg-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--text-3);
+}
+.proj-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.proj-dur {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  font-size: 11px;
+  background: #000a;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+.proj-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+.proj-name {
+  font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 120px;
+}
+.proj-date {
+  font-size: 12px;
+  color: var(--text-3);
+}
+.busy {
+  position: fixed;
+  inset: 0;
+  background: #000b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  font-weight: 600;
+}
+.menu-list {
+  display: grid;
+}
+.menu-list button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 52px;
+  text-align: left;
+  font-size: 16px;
+}
+.menu-list .danger {
+  color: var(--danger);
+}
